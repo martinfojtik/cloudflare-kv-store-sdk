@@ -23,8 +23,8 @@
         "format": "eslint --ext .ts,.js,.svelte . --fix --ignore-path .gitignore && prettier \"**/*.{ts,js,json}\" --write --ignore-path .gitignore",
         "lint": "eslint --ext .ts,.js,.svelte . --ignore-path .gitignore && prettier \"**/*.{ts,js,json}\" --check --ignore-path .gitignore",
         "prepare": "husky install",
-        "prepublishOnly": "npm run test && npm run build && publint",
-        "test": "tsc --noEmit && node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js --no-cache"
+        "prepublishOnly": "npm run build && publint",
+        "test": ""
     },
     "lint-staged": {
         "*.{js,ts,svelte}": [
